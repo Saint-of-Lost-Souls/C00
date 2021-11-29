@@ -3,9 +3,9 @@
 void    ft_print_numbers(void)
 {
     char num;
-    num = 49;
+    num = '1'';
 
-    while (num < 58)
+    while (num < 2)
     {
         write(1, &num, 1);
         num++;

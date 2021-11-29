@@ -1,29 +1,28 @@
 #include <unistd.h>
 #include <ctype.h>
 
-void    ft_maff_revalpha()
+void    ft_maff_revalpha(char c)
 {   
-    int count;      
-    char z;
-    z = 'z';
-       
-    while(z >= 'a')    
+    int count;            
+    
+    while(c >= 'a')    
     {        
         if(count % 2 == 0)
         {   
-            putchar(toupper(z));            
-            write(1, &z, 1);                     
-        } 
-        else{            
-            write(1, &z, 1);
-        }
-        z--; 
-        count++;                
+           c = toupper(c);  
+           write(1, &c, 1); 
+           c = tolower(c);                                 
+       } 
+       else{            
+           write(1, &c, 1);
+       }       
+       c--; 
+       count++;                
     }
-} 
+}
 
 int main()
 {
-    ft_maff_revalpha();
+    ft_maff_revalpha('z');
     return 0;
 }
