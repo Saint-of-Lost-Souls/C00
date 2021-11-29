@@ -20,11 +20,7 @@ void    ft_maff_revalpha()
         z--; 
         count++;                
     }
-<<<<<<< HEAD
 } 
-=======
-}
->>>>>>> 8e1809a6eff76e66d2674759b8c74e37b6f5ed76
 
 int main()
 {
