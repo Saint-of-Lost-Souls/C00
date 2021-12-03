@@ -2,13 +2,16 @@
 
 void    ft_print_numbers(void)
 {
-    char num;
-    num = '1'';
+    char min;
+    char max;
 
-    while (num < 2)
+    min = '0';
+    max = '9';
+
+    while (min <= max)
     {
-        write(1, &num, 1);
-        num++;
+        write(1, &min, 1);
+        min++;
     } 
     write(1, "\n", 1);
 
